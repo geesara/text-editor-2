@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Text Editor 2</title>
+<link rel="stylesheet" href="css/text-editor.css">
+</head>
+<body>
+
+<div id="shield"></div>
+
+<div class="editor-window">
+	<div class="window-control">
+		<button class="ls-btn" id="html-btn">HTML</button>
+		<button class="ls-btn" id="css-btn">CSS</button>
+		<button class="ls-btn" id="js-btn">Javascript</button>
+		<button class="r-btn" id="run-btn">Run</button>
+	</div>
+	<div class="editor-iframe">
+		<div class="text-editor" id="text-editor">
+			<ul class="text-editor-line-nos" id="text-editor-line-nos">
+				<li><code>1</code></li>
+			</ul>
+			<ul class="text-editor-code-lines" id="text-editor-code-lines">
+				<li><code class="code-line">console.log("Hello, world!")</code></li>
+			</ul>
+		</div>
+		<div id="editor-iframe-divider"></div>
+		<iframe frameborder="0" class="iframe" id="iframe-preview"></iframe>
+	</div>
+</div>
+
+<script src="scripts/handlers.js"></script>
+<script src="scripts/selection.js"></script>
+<script src="scripts/keys.js"></script>
+<script src="scripts/iframe.js"></script>
+<script src="scripts/windowcontrol.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
